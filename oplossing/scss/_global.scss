@@ -1,0 +1,49 @@
+$color-black: #000;
+$color-blackLight: #3f3f3f;
+$color-gray: #ccc;
+$color-white: #fff;
+
+$color-red: #af0a78;
+$color-lightred: #ec3169;
+
+$color-primary: #880017;
+$color-secondary: #575757;
+$color-tertiary: #fde5e5;
+$color-health: #00a876;
+
+%boxStyling {
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba($color-black, 0.26);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    @extend %boxStyling;
+    background-color: $color-primary;
+    color: $color-white;
+    margin-bottom: 2rem;
+}
+
+section {
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.container {
+    @extend %boxStyling;
+    margin: 1rem auto;
+    border-radius: 12px;
+}
